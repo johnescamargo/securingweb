@@ -2,8 +2,8 @@ package com.example.securingweb;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface UserRepository extends JpaRepository<DbUser, Long> {
+public interface UserRepository extends JpaRepository<UserEntity, Long> {
 
-	DbUser findByUname(String name);
+	UserEntity findByUsername(String username);
 
 }

@@ -14,11 +14,13 @@ public class MvcConfig implements WebMvcConfigurer {
 		registry.addViewController("/").setViewName("home");
 		registry.addViewController("/hello").setViewName("hello");
 		registry.addViewController("/login").setViewName("login");
+		registry.addViewController("/h2-console/").setViewName("h2-console");
 	}
-	
+
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
 		registry.addResourceHandler("/static/**");
+		registry.addResourceHandler("/h2-console/**");
 		WebMvcConfigurer.super.addResourceHandlers(registry);
 	}
 
