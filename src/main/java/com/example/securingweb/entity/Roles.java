@@ -1,4 +1,4 @@
-package com.example.securingweb;
+package com.example.securingweb.entity;
 
 import java.util.ArrayList;
 import java.util.List;

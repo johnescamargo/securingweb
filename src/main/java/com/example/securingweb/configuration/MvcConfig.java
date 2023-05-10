@@ -1,4 +1,4 @@
-package com.example.securingweb;
+package com.example.securingweb.configuration;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;

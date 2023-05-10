@@ -1,4 +1,4 @@
-package com.example.securingweb;
+package com.example.securingweb.service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +13,10 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
+
+import com.example.securingweb.entity.Roles;
+import com.example.securingweb.entity.UserEntity;
+import com.example.securingweb.repository.UserRepository;
 
 @Service
 public class CustomUserDetailsService implements UserDetailsService {
